@@ -76,7 +76,7 @@ export default {
             this.$http.post(url,this.user).then(response =>{
                 if(response.data.token){
                     localStorage.setItem("token" , response.data.token)
-                this.$router.push({ name : "User Controller"})
+                this.$router.push({ name : "UserController"})
                 }else{
                     alert('gagal login')
                 }

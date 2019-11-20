@@ -5,7 +5,7 @@ const LoginLayout = () => import(/* webpackChunkName: "dashboard" */ '../compone
 function loadView(view) {
     return () => import(
         /* webpackChunkName: "view-[request]" */
-        `../components//${view}.vue`)
+        `../components/DashboardContents/${view}.vue`)
 }
 const routes = [{
     path: '/dashboard',
